@@ -2,9 +2,11 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 class MohrsCircle:
-    # Initiates Mohr's circle attributes
+    """Takes Stress Values and calculates various components of those stresses
+    as well as plots some of those components and properties
+    """
+
     def __init__(self, sigmax, sigmay, tauxy, units):
         self.sigmax = sigmax
         self.sigmay = sigmay
