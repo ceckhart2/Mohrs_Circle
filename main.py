@@ -16,7 +16,6 @@ class MohrsCircle:
     def sigma_avg(self):
         return round((self.sigmax + self.sigmay) / 2, 2)
 
-    # Returns radius
     def radius(self):
         return round(math.sqrt(((self.sigmax - self.sigmay) / 2) ** 2 + self.tauxy ** 2), 2)
 
