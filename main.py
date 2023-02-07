@@ -33,6 +33,7 @@ class MohrsCircle:
         else:
             return math.fabs(round(math.degrees(math.atan(self.tauxy / (self.sigma_avg() - self.sigmay))), 2))
 
+    # Creates plot of data
     def circle_plot(self):
         radians = (np.linspace(0, 360, 361)) * math.pi / 180
         sigma_points = self.sigma_avg() + self.radius() * np.cos(radians)
@@ -66,6 +67,7 @@ class MohrsCircle:
         plt.show()
 
 
+# Defines User Inuts
 sigmax = float(input('Enter Sigma X: '))
 sigmay = float(input('Enter Sigma Y: '))
 tauxy = float(input('Enter TauXY: '))
