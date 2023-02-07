@@ -66,12 +66,13 @@ class MohrsCircle:
         plt.show()
 
 
-sigmax = float(input('Enter Sigma X'))
-sigmay = float(input('Enter Sigma Y'))
-tauxy = float(input('Enter TauXY'))
-units = input('Enter unit type')
+sigmax = float(input('Enter Sigma X: '))
+sigmay = float(input('Enter Sigma Y: '))
+tauxy = float(input('Enter TauXY: '))
+units = input('Enter unit type: ')
 
 print('Plotting...')
 
-mohr1 = MohrsCircle(sigmax, sigmay, tauxy, units)
-mohr1.circle_plot()
+if __name__ == '__main__':
+    mohr1 = MohrsCircle(sigmax, sigmay, tauxy, units)
+    mohr1.circle_plot()
